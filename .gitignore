@@ -1,0 +1,32 @@
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore user-specific files created by Visual Studio
+.vs/
+*.user
+*.suo
+*.userprefs
+
+# Ignore NuGet packages and cache
+packages/
+!**/packages/build/
+!**/packages/tools/
+.nuget/
+
+# Ignore ReSharper files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Ignore NCrunch files
+_NCrunch_*
+.*crunch*.local.xml
+
+# Ignore Test Results
+[TestResults]
+[TestResults]/
+
+# Ignore .NET Core build output
+project.lock.json
+project.fragment.lock.json
+artifacts/
