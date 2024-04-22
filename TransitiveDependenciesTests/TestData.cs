@@ -17,7 +17,7 @@ internal class TestData
             var nodeF = new Node("F");
             var nodeG = new Node("G");
             var nodeH = new Node("H");
-            var nodeI = new Node("I");
+            var nodeI = new Node("I"); // not part of the original test data spec, here to cater for the edge case for when a token does not depend on anything  
 
 
             nodeA.TryAddChild(nodeC);
@@ -30,6 +30,7 @@ internal class TestData
             nodeE.TryAddChild(nodeF);
             nodeE.TryAddChild(nodeH);
             nodeF.TryAddChild(nodeH);
+            nodeC.TryAddChild(nodeA); //Added for Part 2
 
             return new List<Node>()
         {

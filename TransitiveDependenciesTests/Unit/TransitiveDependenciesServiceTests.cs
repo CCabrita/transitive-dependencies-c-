@@ -21,6 +21,9 @@ public class TransitiveDependenciesServiceTests
     [InlineData("D A F", "D  A B C E F G H")]
     [InlineData("E", "E  F H")]
     [InlineData("F", "F  H")]
+    [InlineData("A B", "A  B C E F G H")]
+    [InlineData("B C", "B  C E F G H")]
+    [InlineData("C A", "C  G")]
     public void DependenciesGraph_ShouldBe_Correct(string input, string expectedOutput)
     {
 
