@@ -4,14 +4,14 @@ using TransitiveDependenciesGraph.Models;
 namespace TransitiveDependenciesTests.Unit;
 
 
-public class TransitiveDependenciesServiceTests
+public class TransitiveDependenciesGraphServiceTests
 {
     private readonly GraphDataRepository _graphData;
-    private readonly TransitiveDependenciesService _sut;
-    public TransitiveDependenciesServiceTests()
+    private readonly TransitiveDependenciesGraphService _sut;
+    public TransitiveDependenciesGraphServiceTests()
     {
         _graphData = new GraphDataRepository(TestData.Nodes);
-        _sut = new TransitiveDependenciesService(_graphData);
+        _sut = new TransitiveDependenciesGraphService(_graphData);
     }
 
     [Theory]

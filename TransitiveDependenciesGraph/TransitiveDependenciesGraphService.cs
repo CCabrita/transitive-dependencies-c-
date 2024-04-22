@@ -2,11 +2,11 @@
 using TransitiveDependenciesGraph.Models;
 
 
-public class TransitiveDependenciesService
+public class TransitiveDependenciesGraphService
 {
     private readonly GraphDataRepository _graphData;
 
-    public TransitiveDependenciesService(GraphDataRepository graphData)
+    public TransitiveDependenciesGraphService(GraphDataRepository graphData)
     {
         _graphData = graphData;
     }
